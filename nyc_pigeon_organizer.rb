@@ -1,7 +1,9 @@
+require "pry"
 def nyc_pigeon_organizer(data)
   # write your code here!
   final = {}
   data.each do |first, others|
+    binding.pry
     others.each do |category, array|
       array.each do |name|
         final[name] = {color: [], gender: [], lives: []}
