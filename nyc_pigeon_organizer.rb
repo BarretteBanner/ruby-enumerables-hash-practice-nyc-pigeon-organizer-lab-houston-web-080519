@@ -27,11 +27,11 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  data[:lives].each do |lives, name3|
+  data[:lives].each do |location, name3|
     name3.each do |bird_name|
       x.each do |item|
         if bird_name == item
-          final[item][:lives] << lives.to_s
+          final[item][:lives] << location.to_s
         end
       end
     end
