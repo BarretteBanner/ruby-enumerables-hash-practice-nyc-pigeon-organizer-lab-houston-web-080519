@@ -18,5 +18,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end 
-  data[:gender]. each do |gender, name|
+  data[:gender]. each do |gender, name2|
+    name2.each do |bird_name
 end
